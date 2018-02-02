@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+<script type="text/javascript">
+	var Cidades = ["Natal", "Fortaleza", "Teresina", "Maceio"];
+	
+	 //PERCORRE O ARRAY E ESCREVE NA TELA O NOME DOS ELEMENTOS
+	 for(i=0;i<Cidades.length;i++)
+	 {
+	 	document.write(Cidades[i]+"<br/>");
+	 }
+	
+	//AGRUPA OS ELEMENTOS
+	var ConjuntoCidades = Cidades.join(", ");
+	document.write("<br/>" + ConjuntoCidades + "<br/>");
+
+	//EXLUI O ULTIMO ELEMENTO
+	Cidades.pop();
+	ConjuntoCidades = Cidades.join(", ");
+	document.write("<br/>" + ConjuntoCidades + "<br/>");
+
+	//INCLUI UM ELEMENTO NO FINAL DO ARRAY
+	Cidades.push("Boston")
+	ConjuntoCidades = Cidades.join(", ");
+	document.write("<br/>" + ConjuntoCidades + "<br/>");
+
+	//remove o primeiro elemento de um array, e desloca os elementos para esquerda
+	Cidades.shift();
+	ConjuntoCidades = Cidades.join(", ");
+	document.write("<br/>" + ConjuntoCidades + "<br/>");
+
+	Cidades.splice(2,0,"Novo");
+	ConjuntoCidades = Cidades.join(", ");
+	document.write("<br/>" + ConjuntoCidades + "<br/>");
+
+	Cidades.splice(2,1,"Substituido");
+	ConjuntoCidades = Cidades.join(", ");
+	document.write("<br/>" + ConjuntoCidades + "<br/>");
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste 04 - Aula 3 JavaScript</title>
+</head>
+<body>
+<script type="text/javascript">
+	alert("Isso é um alert");
+</script>
+<script type="text/javascript">
+	var a = prompt("Digite seu nome:","Nome");
+	var b = prompt("Digite seu sobrenome:");
+	document.write("Bom dia, " + a + " " + b + "<br/>");
+</script>
+<script type="text/javascript">
+	var mensagem;
+	var retorno = confirm("Seu nome é " + a + " " + b);
+	if(retorno == true)
+	{
+		mensagem = "Operação Confirmada";
+	}
+	else
+	{
+		mensagem="Operação Cancelada";
+	}
+	document.write("<br/>"+ "<strong>"+ mensagem + "</strong>");
+</script>
+</body>
+</html>
